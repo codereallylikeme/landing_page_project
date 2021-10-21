@@ -61,6 +61,7 @@ function isViewThere(){
           const id = section.getAttribute('id');
            document.querySelector(`#${id}`).classList.add('active');
             section.classList.add('your-active-class')
+            //Highlight the nav
            navbarSectionLink.forEach(item=>{
             item.classList.remove('activate-nav');
             if(item.getAttribute('href') ==  `#${id}`){
